@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 # Script that pings an IP address passed as an argument.
-
-# Check if an argument is provided
 if [ -n "$1" ]; then
-    ping -c 5 "$1"  # Ping the provided IP address 5 times
+    ping -c 5 "$1"
 else
-    echo "Usage: $0 {IP_ADDRESS}"  # Provide usage instructions with script name
+    echo "Usage: $0 {IP_ADDRESS}"
 fi
 
